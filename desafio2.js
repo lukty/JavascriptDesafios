@@ -1,32 +1,38 @@
-let numerosAlumnos = parseInt(prompt('Ingrese la cantidad de alumnos'));
+// Desafio obligatorio lucas bringas
 
-let prom = (nota1,nota2,nota3) => {
-    let promedio = (nota1 + nota2 + nota3) / 3;
-    return promedio;
+
+
+
+//Funcion para ingresar cantidad a prestar
+function cantidad1(){
+  let cantidad1 = parseInt(prompt("Ingresar cantidad a prestar"));
+  alert("La cantidad es = " + cantidad1)
+  return cantidad1
 }
 
-
-for(let i = 1; i <= numerosAlumnos; i++){
-
-    let nota1 = parseInt(prompt(`Ingrese la primera nota del alumno ${i}`))
-
-    while(nota1 > 10 || nota1 <= 0){
-        nota1 = parseInt(prompt('Por favor ingrese una nota del 1 al 10'))
-    }
-
-    let nota2 = parseInt(prompt(`Ingrese la segunda nota del alumno ${i}`))
-
-    while(nota2 > 10 || nota2 <= 0){
-        nota2 = parseInt(prompt('Por favor ingrese una nota del 1 al 10'))
-    }
-
-    let nota3 = parseInt(prompt(`Ingrese la tercera nota del alumno ${i}`))
-
-    while(nota3 > 10 || nota3 <= 0){
-        nota3 = parseInt(prompt('Por favor ingrese una nota del 1 al 10'))
-    }
-
-    let promedio = prom(nota1, nota2, nota3);
-    alert(`El promedio del alumno ${i} es ${promedio}`);
-    
+//Funcion para ingresar cuotas a pagar
+function cuotas1(){
+  let cuotas1 = parseInt(prompt("En cuantas cuotas quiere pagar, elija de 1 a 12"));
+  alert("Desea el prestamo en " + cuotas1 + " Cuotas?")
+  return cuotas1
 }
+
+//Capturar resultado de funciones
+let cantidad = cantidad1()
+let cuotas = cuotas1()
+
+//Mostrar resultado de funciones
+alert("La cantidad es: " + cantidad)
+alert("Las cuotas son: " + cuotas)
+
+//Funcion para dividir cantidad en cuotas
+function dividir(dato1, dato2){
+ let resultado = dato1 / dato2;
+ return resultado
+}
+
+//Capturar cantiddad / cuotas
+let division = dividir(cantidad, cuotas)
+
+//Mostrar resultado
+alert("Usted debe pagar " + cuotas + " cuotas de " + division)
