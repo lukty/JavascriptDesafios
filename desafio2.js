@@ -1,4 +1,4 @@
-// Desafio obligatorio lucas bringas
+// Desafio obligatorio lucas bringas Prestamos en cuotas.
 
 
 
