@@ -17,11 +17,11 @@ function cuotas1(){
   return cuotas1
 }
 
-//Capturar resultado de funciones
+// resultado de funciones
 let cantidad = cantidad1()
 let cuotas = cuotas1()
 
-//Mostrar resultado de funciones
+//Mostrar resultado
 alert("La cantidad es: " + cantidad)
 alert("Las cuotas son: " + cuotas)
 
@@ -31,7 +31,7 @@ function dividir(dato1, dato2){
  return resultado
 }
 
-//Capturar cantiddad / cuotas
+// cantiddad / cuotas
 let division = dividir(cantidad, cuotas)
 
 //Mostrar resultado
