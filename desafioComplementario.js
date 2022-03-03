@@ -1,3 +1,6 @@
+
+// Arrays
+
 class pantalon {
     constructor(id, nombre, color, precio) {
       this.id = id;
