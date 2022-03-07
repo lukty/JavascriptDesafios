@@ -32,7 +32,7 @@ function simulador_de_credito_pe1() {
 
   let nombreCelular = "";
 
-  const opcion_credito = parseInt(prompt("Atención Elejir una de la Opciones del tipo de Credito: \n1 : " + credito_tipo1));
+  const opcion_credito = parseInt(prompt("Atención Elegir una de la opciones del tipo de Credito: \n1 : " + credito_tipo1));
 
   switch (opcion_credito) {
     case 1:
@@ -44,7 +44,7 @@ function simulador_de_credito_pe1() {
       });
       let elecion = parseInt(prompt(`Cual celular deseas: \n${nombreCelular} `));
       if (elecion == 1 || elecion == 2 || elecion == 3) {
-        let cuotas = parseInt(prompt(`Cuanta cuotas deseas?`));
+        let cuotas = parseInt(prompt(`Cuanta cuotas quieres?`));
         let vehiculo_valor = celular[elecion-1].valor;
         alert(calculo_credito_celu(vehiculo_valor, cuotas));
       } else {
@@ -53,7 +53,7 @@ function simulador_de_credito_pe1() {
 
       break;
     default: {
-      alert("Debe Elejir una de la opciones Valida");
+      alert("Debe Elegir una de la opciones Valida");
       return simulador_de_credito;
     }
   }
